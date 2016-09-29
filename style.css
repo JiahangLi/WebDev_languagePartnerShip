@@ -5,6 +5,12 @@ h1.header{
    text-decoration:none;
 }
 
+.footer{
+   display:block;
+   background-color:black;
+   color:white;
+}
+
 body{
     background-repeat:no-repeat;
     padding-left=100px;
