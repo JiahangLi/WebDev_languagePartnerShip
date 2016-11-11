@@ -1,3 +1,4 @@
+
 h1.header{
    display:inline;
    color: black;
@@ -8,6 +9,21 @@ h1.header{
 
 }
 
+.titleline{
+    display:inline;
+    color: #4CAF50;
+    margin 20px 0 20px 0;
+}
+.error{
+    color: #FF0000;
+}
+
+.errormsg{
+     color: #FF0000;
+     font-weight:bold;
+     font-size: 20px;
+     padding:5px 5px;
+}
 
 body{
     background-repeat:no-repeat;
@@ -38,10 +54,11 @@ body{
 
 .left{
 	position: absolute;
-    	border: 2px solid #3399ff;
+    border: 2px solid #3399ff;
 	border-radius:10px;
 	left:2%;
 	right:67%;
+	padding: 2px 10px;
 }
 
 .leftside{
@@ -70,6 +87,24 @@ body{
     cursor: pointer;
     margin: 8px 2px;
 }
+select {
+ 
+    background-color: #F07575; /* fallback color if gradients are not supported */
+    background-image: url(../images/select-arrow.png), -webkit-linear-gradient(top, #E5E5E5, #F4F4F4); /* For Chrome and Safari */
+    background-position: center right;
+    background-repeat: no-repeat;
+    border: 1px solid #AAA;
+    border-radius: 2px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+    color: #555;
+    font-size: inherit;
+    margin: 0;
+    overflow: hidden;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
 
 .button:hover{
    background-color:#4CAF50;
@@ -85,6 +120,28 @@ input[type=text], select {
     border-radius: 4px;
     box-sizing: border-box;
 }
+
+input[type=password], select {
+    width: 80%;
+    padding: 12px 20px;
+    margin: 8px 10px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=email], select {
+    width: 80%;
+    padding: 12px 20px;
+    margin: 8px 10px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.error {color: #FF0000;}
 
 .sidepic{
     position:abosolute;
@@ -154,4 +211,7 @@ li.currentlink{
 	color: #999999;
 }
 
-
+.link{
+    background-color: #999999;
+    display:inline;
+}

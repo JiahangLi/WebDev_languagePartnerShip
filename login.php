@@ -1,5 +1,16 @@
+<?php
+	include_once("login.html"); 
+	session_start();
+	if(isset($_SESSION['loggedin'])&& $_SESSION['loggedin'])
+	{
+		header("Location: profile.php");
+	}
+	$email="";
+	if(isset($_SESSION['preset_email'])){
+		$email = $_SESSION['preset_email'];
+	}
 
-<!DOCTYE html>
+?>
 <html>
     <div class="header">
 
@@ -17,8 +28,8 @@
 	    
 		<div>
 			<ul class="nav">	
-				 <li><a href="learner_account_create.html">Join as a mentee</a></li>
-				 <li><a href="speaker_account_create.html">Join as a mentor</a></li>
+				 <li><a href="learner_account_create.html">Create an account</a></li>
+				 <li><a href="search.html">Search for a partner</a></li>
 				 <li class="currentlink"> <a href="login.html"> Log In </a></li>
 				 <li><a href="index.html"> Homepage</a></li>
 			</ul>
@@ -45,7 +56,7 @@
 				 
 	  		  </form>
 
-				<p> No Account? No problem! <a href="createAccount.php" class="signUpLink">Sign up!</a> </p>
+				<p> No Account? No problem! <a href="learner_account_create.html" class="signUpLink">Sign up!</a> </p>
 				
     	  </div>
     	</div>

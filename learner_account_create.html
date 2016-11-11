@@ -1,15 +1,16 @@
 
+<!DOCTYE html>
 <html>
-    <div class="header">
 
+	<head>
+		<link rel="stylesheet" href="login.css">
+		<link rel="icon" type="favicon.jpg" href="image/shipicon.jpg">
+	</head>
     	<title>Language Parntership
 	</title> 
 
-	    <head>
-			<link rel="stylesheet" href="login.css">
-			<link rel="icon" sizes="16*16" type="image/png" href="image/shipiconpng.png">
-	    </head>
 
+    <div class="header">
 		<header>
 	    	<a href="index.html"><img  class= "icon" src="image/shipicon.jpg" width=40px height=40px></a>
 			<a href="index.html"><h1 class="header">Language Partnership</h1></a>
@@ -17,12 +18,12 @@
 	    
 		<div>
 			<ul class="nav">	
-				 <li class="currentlink"><a href="learner_account_create.html">Create a learner account</a></li>
-				 <li><a href="speaker_account_create.html">Create a speaker account</a></li>
+				 <li class="currentlink"><a href="learner_account_create.html">Join as a mentee</a></li>
+				 <li><a href="speaker_account_create.html">Join as a mentor</a></li>
 				 <li><a href="login.html"> Log In </a></li>
 				 <li><a href="index.html"> Homepage</a></li>
 			</ul>
-	    </div>
+    </div>
 
     </div>
     <div>
@@ -32,22 +33,18 @@
     <body class="accountCreation">
 	<div class="container">
 	  <div class="left">  
-	     <h1> Enthusiatic Leaner </h1>
-	     <form>
-	    	    
-	  	First Name<br> 
-      	        <input type="text" name="FirstName"><br>
-  	       	Last Name<br>
-  	        <input type="text" name="LastName">
-	        <br/> 
-		PassWord<br/> 
-		<input type="text" name="passWord">
-	        <br/> 
-	       	<input type="submit" class="button" value="Get your ticket">
+	     <h1> Enthusiatic Learner </h1>
 
-
-
+	     <form action="createAccount_handler.php" method="POST">
+	  			Username<br> 
+      	        <input type="text" name="username" required><br/>
+  	       		Email<br>
+  			    <input type="email" name="email" required> <br/>  
+				Password<br/> 
+				<input type="password" name="password" required>  <br/> 
+	         	<input type="submit" class="button" value="Get your ticket">
 	    </form>
+
     	  </div>
     	</div>
         <right> <img class="sidepic" src="image/voyage.jpg" class="right"></right>

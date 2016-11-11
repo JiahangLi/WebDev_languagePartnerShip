@@ -1,0 +1,42 @@
+
+<!DOCTYE html>
+<html>
+   
+
+
+	    <head>
+    		<title>Customize your own parnter haunting search</title> 
+		<link rel="stylesheet" href="login.css">
+		<link rel="icon" sizes="16*16" type="image/png" href="images/shipiconpng.png">
+	    </head>
+ 	<div class="header">
+    	<title>Language Parntership</title> 
+		<header>
+	    	<a href="index.html"><img  class= "icon" src="image/shipicon.jpg" width=40px height=40px></a>
+			<a href="index.html"><h1 class="header">Language Partnership</h1></a>
+	    </header>
+		<div>
+				<ul class="nav">	
+					<li><a href="learner_account_create.html">Create an account</a></li>
+					<li class="currentlink"><a href="search.html">Search for a partner</a></li>
+					<li > <a href="login.html"> Log In </a></li>
+					<li><a href="index.html"> Homepage</a></li>
+				</ul>
+			</div>
+	</div>
+    </div>
+
+   <div class="searchform">
+   	<h1>Search for Tutor</h1>
+   	<form id="searchform" action="search_handler.php" aciton="POST">
+   		<label for="query"> Language you want to learn </label>
+   		<input type="text" id="query" name="query">
+		<input type="submit" class = "button" name="submitButton">   		
+   	</form>
+	<form class="logout"	action="logout.php" action="POST">
+	   <input type="submit" class= "button" name="LogOutButton" value="SignOut"> 
+	   </form>
+
+   </div>
+
+</html>
